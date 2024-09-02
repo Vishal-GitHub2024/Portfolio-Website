@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  background-color: black;
+  color: lightblue;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+header nav {
+  /* background-color: green; */
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header nav h1 {
+  font-family: "Exo 2", sans-serif;
+  margin-left: 50px;
+  font-size: 40px;
+}
+header nav ul {
+  /* background-color: blue; */
+  padding: 0px 10px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+header nav ul li {
+  list-style: none;
+  margin: auto 25px;
+  font-size: 20px;
+}
+header nav ul li a {
+  font-family: "Exo 2", sans-serif;
+  text-decoration: none;
+  color: lightblue;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav ul li a.active {
+  color: white; /* Change this to your desired color */
+}
+
+
+#home {
+  height: 663px;
+  width: 100vw;
+  background-color: black;
+}
+#home .intro {
+  height: 350px;
+  width: 500px;
+  /* background-color: white; */
+  position: absolute;
+  bottom: 150px;
+  left: 210px;
+  padding: 20px;
+  overflow: hidden;
+  color: white;
+}
+#home .intro h1 {
+  font-size: 30px;
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(174, 170, 170);
+}
+#home .intro .name {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 40px;
+}
+#home .intro .name #myname {
+  color: lightblue;
+}
+#home .intro .services {
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+#home .intro p {
+  font-size: 20px;
+  margin-top: 30px;
+  font-family: "Rajdhani", sans-serif;
+}
+#home .image {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 170px;
+  bottom: 150px;
+  border-radius: 50%;
+  border-top: 10px solid lightblue;
+  border-right: 10px solid white;
+  border-bottom: 10px solid lightblue;
+  border-left: 10px solid white;
+   background: repeating-linear-gradient(to right, lightblue, white);
+  box-shadow: 5px 5px 15px rgb(255, 255, 255), -5px -5px 15px lightblue;
+  animation: rotation 2s infinite linear; 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#home  img {
+  height: 400px;
+  width: 400px;
+  background-color: lightblue;
+  border-radius: 50%;
+  position: absolute;
+  right: 179px;
+  bottom: 159px;
+}
+
+#about {
+  height: 663px;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+}
+#about .image {
+  height: 400px;
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  left: 220px;
+  bottom: 80px;
+  border-radius: 50%;
+}
+#about .image img {
+  left: 220px;
+  bottom: 50px;
+  height: 400px;
+  width: 350px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+#about .info {
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  bottom: 70px;
+  right: 175px;
+  padding: 30px 20px;
+  display: flex;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  background-color: rgba(255, 253, 253, 0.073);
+}
+#about .info .keys {
+  /* background-color: red; */
+  margin: 5px 10px;
+}
+#about .info .keys ul {
+  list-style: none;
+  /* background-color: blue; */
+}
+#about .info .keys ul li {
+  font-family: "Poetsen One", sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+#about .info .values {
+  /* background-color: red; */
+  margin: 5px;
+}
+#about .info .values ul {
+  list-style: none;
+}
+#about .info .values ul li {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 22.5px;
+  font-size: 20px;
+  color: white;
+}
+
+#resume {
+  height: 663px;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+}
+#resume .container {
+  width: 97vw;
+  height: 605px;
+  /* background-color: red; */
+  position: absolute;
+  top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#resume .container .box {
+  height: 270px;
+  width: 530px;
+  border: 2px solid gainsboro;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(255, 253, 253, 0.073);
+  margin-top: 20px;
+  margin-left: 170px;
+  text-align: center;
+  position: relative;
+}
+#resume .container .box h1 {
+  background-color: lightblue;
+  color: black;
+  padding: 5px 0;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#resume .container .box #btech {
+  color: lightblue;
+  font-size: 25px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-family: "Exo 2", sans-serif;
+}
+#resume .container .box #intermediate {
+  color: lightblue;
+  font-size: 25px;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-family: "Exo 2", sans-serif;
+}
+#resume .container .box #highschool {
+  color: lightblue;
+  font-size: 25px;
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  font-family: "Exo 2", sans-serif;
+}
+#resume .container .box #para1 {
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#resume .container .box #para2 {
+  font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+#resume .container .box #para3 {
+  font-size: 20px;
+  position: absolute;
+  top: 220px;
+  left: 50px;
+}
+#resume .container .box h2 {
+  font-family: "Exo 2", sans-serif;
+  position: absolute;
+  left: 40px;
+  top: 90px;
+}
+#resume .container .box h4 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: lightblue;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+#resume .container .box #para4 {
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  right: 25px;
+}
+
+#skills {
+  height: 663px;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+}
+#skills .container {
+  height: 75vh;
+  width: 80vw;
+  background-color: rgba(255, 253, 253, 0.073);
+  border-radius: 5px;
+  position: absolute;
+  top: 120px;
+  left: 140px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills .container .box {
+  height: 50px;
+  width: 495px;
+  /* background-color: cadetblue; */
+  margin-top: 20px;
+  margin-left: 80px;
+}
+#skills .container .box h2 {
+  color: white;
+  width: 465px;
+  margin-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poetsen One", sans-serif;
+}
+
+#skills .container .box .range {
+  height: 10px;
+  width: 475px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px auto;
+}
+#skills .container .box .range .htmlvalue {
+  height: 10px;
+  width: 403px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .cssvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .jsvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .reactvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .jqvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .sqlvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .bsvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .twvalue {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .figma {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .WordPress {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .Node {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+#skills .container .box .range .MongoDB {
+  height: 10px;
+  width: 445px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+#project {
+  height: 663px;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+}
+#project .slider{
+  background-color: aqua;
+  height: 550px;
+  width: 100vw;
+  position: absolute;
+  bottom: 10px;
+}
+#project .slider .slides {
+  display: flex;
+  transition: transform 2s ease-in-out;
+}
+
+#project .slider .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+#project .slider .slide img {
+  height: 550px;
+  width: 100vw;
+}
+#project .slider .slide a button{
+  width: 100vw;
+  height: 550px;
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+
+}
+#project .slider .slide a button:hover{
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.227);
+  color: black;
+}
+
+#project .slider .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#project .slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#project .slider .prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contact {
+  height: 663px;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+#contact form {
+  height: 250px;
+  width: 900px;
+  /* background-color: red; */
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  padding: 40px;
+}
+#contact form label {
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif;
+}
+#contact form #name {
+  padding: 5px;
+  width: 350px;
+  height: 20px;
+  margin: 10px 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+#contact form #email {
+  padding: 5px;
+  width: 350px;
+  height: 20px;
+  margin: 30px 15px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+}
+#contact form #phone {
+  padding: 5px;
+  width: 350px;
+  height: 20px;
+  margin: 10px 8px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+}
+#contact form #msgbox {
+  height: 175px;
+  width: 395px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+#contact form button {
+  position: absolute;
+  width: 890px;
+  bottom: 30px;
+  left: 40px;
+  padding: 10px 0px;
+  font-size: 20px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+}
+#contact .socialcontainer {
+  height: 110px;
+  width: 1100px;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 80px;
+  left: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+#contact .socialcontainer .icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 253, 253, 0.073);
+  border: 2px solid gainsboro;
+  box-shadow: 5px 5px 15px, -5px -5px 15px, 5px -5px 15px, -5px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact #location {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 140px;
+  font-size: 20px;
+}
+#contact #mobile {
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 370px;
+  font-size: 20px;
+}
+#contact #linkedin {
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 605px;
+  font-size: 20px;
+}
+#contact #mail {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 865px;
+  font-size: 20px;
+}
+#contact #whatsapp {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 1137px;
+  font-size: 20px;
+}
+#contact .socialcontainer .icon i {
+  font-size: 60px;
+}
+#contact .details a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+}
+#contact .details {
+  margin-left: 72px;
+}
+

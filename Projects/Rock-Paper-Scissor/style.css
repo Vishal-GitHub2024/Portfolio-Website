@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-align: center;
+  
+}
+h1{
+  margin-top: 100px;
+}
+
+button{
+  padding: 20px 50px;
+  margin: 50px 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
